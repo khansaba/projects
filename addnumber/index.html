@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add numbers</title>
+</head>
+
+<body>
+    <form  id="add-number">
+        <label for="">Enter First Number</label>
+        <input type="number"  id="num1"><br><br>
+
+        <label for="">Enter Second Number</label>
+        <input type="number"  id="num2"><br><br>
+
+        <label for="">Sum</label>
+        <input type="number" name="" id="sum">
+
+        <input type="button" class="addbtn" value="Add" onclick="addition()">
+        <input type="button" class="resetbtn" value="Reset" onclick="Reset()">
+
+    </form>
+
+
+    <!-- javascript code-->
+    <script>
+
+    //add function
+        function addition(){
+            var num1 = parseInt(document.getElementById("num1").value);
+            var num2 = parseInt(document.getElementById("num2").value);
+            var sum = num1 + num2;
+
+            document.getElementById("sum").value = sum;
+        }
+
+
+    //reset function
+    function Reset(){
+        document.getElementById("add-number").reset();
+    }
+
+
+
+    </script>
+
+</body>
+
+</html>
