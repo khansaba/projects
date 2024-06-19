@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="audio.css">
+</head>
+
+<body>
+    <div class="videobg">
+        <video autoplay loop muted>
+            <source src="video/bokeh_-_5126 (540p).mp4" type="video/mp4">
+        </video>
+
+        <audio src="audio/applause.mp3" id="audio-applause"></audio>
+        <audio src="audio/boo.mp3" id="audio-boo"></audio>
+        <audio src="audio/gasp.mp3" id="audio-gasp"></audio>
+        <audio src="audio/tada.mp3" id="audio-tada"></audio>
+        <audio src="audio/victory.mp3" id="audio-victory"></audio>
+        <audio src="audio/wrong.mp3" id="audio-wrong"></audio>
+
+        <div class="centered">
+            <div class="buttons">
+                <button id="Applause">Applause</button>
+                <button id="Boo">Boo</button>
+                <button id="Gasp">Gasp</button>
+                <button id="Tada">Tada</button>
+                <button id="Victory">Victory</button>
+                <button id="Wrong">Wrong</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('Applause').addEventListener('click', function() {
+                document.getElementById('audio-applause').play();
+            });
+
+            document.getElementById('Boo').addEventListener('click', function() {
+                document.getElementById('audio-boo').play();
+            });
+
+            document.getElementById('Gasp').addEventListener('click', function() {
+                document.getElementById('audio-gasp').play();
+            });
+
+            document.getElementById('Tada').addEventListener('click', function() {
+                document.getElementById('audio-tada').play();
+            });
+
+            document.getElementById('Victory').addEventListener('click', function() {
+                document.getElementById('audio-victory').play();
+            });
+
+            document.getElementById('Wrong').addEventListener('click', function() {
+                document.getElementById('audio-wrong').play();
+            });
+        });
+    </script>
+</body>
+
+</html>
